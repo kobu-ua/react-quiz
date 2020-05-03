@@ -1,0 +1,57 @@
+.slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  // wdith: 50%;
+  // left: 25%;
+  // right: 25%;
+  overflow-x: hidden;
+}
+
+.line {
+  position: absolute;
+  opacity: 0.4;
+  background: #4a8df8;
+  width: 150%;
+  height: 10px;
+}
+
+.subline {
+  position: absolute;
+  background: #4a8df8;
+  height: 10px;
+}
+
+.inc {
+  animation: increase 3s infinite;
+}
+
+.dec {
+  animation: decrease 3s 0.75s infinite;
+}
+
+@keyframes increase {
+  from {
+    left: -5%;
+    width: 5%;
+  }
+
+  to {
+    left: 130%;
+    width: 100%;
+  }
+}
+
+@keyframes decrease {
+  from {
+    left: -80%;
+    width: 80%;
+  }
+
+  to {
+    left: 110%;
+    width: 10%;
+  }
+}

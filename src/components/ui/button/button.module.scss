@@ -1,0 +1,48 @@
+.btn {
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: color .3s, background-color .3s;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+  &:hover {
+    color: #5041b2;
+    background-color: #fff;
+  }
+
+  &:disabled {
+    background-color: #ccc !important;
+    color: #000 !important;
+    cursor: not-allowed;
+  }
+
+  &.primary {
+    background-color: #1cb7ec;
+    color: #fff;
+    &:hover {
+      background-color: darken($color: #1cb7ec, $amount: 17);
+    }
+  }
+
+  &.error {
+    background-color: #f0576c;
+    color: #713039;
+    &:hover {
+      background-color: darken($color: #f0576c, $amount: 17);
+    }
+  }
+
+  &.success {
+    background-color: #a1f045;
+    color: #548817;
+    &:hover {
+      background-color: darken($color: #a1f045, $amount: 17);
+    }
+  }
+}

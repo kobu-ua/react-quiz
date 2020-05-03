@@ -1,0 +1,1 @@
+//TODO: Transfer code there from index.js and export store
