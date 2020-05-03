@@ -71,4 +71,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 Info: https://www.npmjs.com/package/create-react-component-folder
 
 Command to create component:
-npx crcf components/name -f
+
+`npx crcf components/name -f`
