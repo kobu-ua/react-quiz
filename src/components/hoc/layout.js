@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Drawer from '../navigation/drawer';
 import MenuToggle from '../navigation/menu-toggle';
-import classes from './layout.module.scss';
 import { connect } from 'react-redux';
+import { ToastContainer } from "react-toastify";
+
+import classes from './layout.module.scss';
 
 class Layout extends Component {
   state = {
@@ -33,6 +35,7 @@ class Layout extends Component {
           isOpen={this.state.menu}
           onToggle={this.toggleMenuHandler}
         />
+        <ToastContainer autoClose={2000} />
         <main className={classes.layout__main}>
           { this.props.children }
         </main>

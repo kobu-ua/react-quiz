@@ -13,4 +13,5 @@ export const CREATE_QUIZ_QUESTION = 'CREATE_QUIZ_QUESTION';
 export const CREATE_QUIZ_RESET = 'CREATE_QUIZ_RESET';
 
 export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const AUTH_ERROR = 'AUTH_ERROR';
 export const AUTH_LOGOUT = 'AUTH_LOGOUT';
